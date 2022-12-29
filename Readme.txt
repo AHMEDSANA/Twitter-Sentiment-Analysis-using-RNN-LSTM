@@ -4,6 +4,7 @@ We used glove library for embedding our dataset for training becasue it becomes 
 To understand the working of RNN you can consult the following websites or blogs:
 https://www.simplilearn.com/tutorials/deep-learning-tutorial/rnn
 https://towardsdatascience.com/using-lstm-in-twitter-sentiment-analysis-a5d9013b523b
-
+To learn more you can download the pdf file given in the rep.
+Step by Step information is also given in the code file.
 
 
