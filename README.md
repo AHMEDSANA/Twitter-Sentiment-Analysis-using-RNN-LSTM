@@ -35,6 +35,12 @@ And load it into the dictionary function so it can be called directly.
 
 Download wordnet and omw file to deal with string data from NLP library After this we will tokenize the data. Which divides the data into small parts, so the sentences become easier to use or translate into other language or format. After this we will Lemmatizer our data. Lemmatizer will convert the words to the most common form of that word or the most used similar word so it is easier to  detect.
 
+**Required Lib:**
+
+nltk.download('omw-1.4')
+
+nltk.download('wordnet')
+
 
   
 **Output**
