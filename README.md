@@ -21,9 +21,9 @@ Go on the Runtime tab and change the Runtime type to GPU and save it.
 Mount the Drive in which you uploaded the Dataset you want to train the model. 
 
 **Output**
-
-![image](https://user-images.githubusercontent.com/73955220/210324947-b333a83b-66df-4c61-8f55-f8148b6f8483.png)
-
+<p align="center">
+<img width="" height="" src="https://user-images.githubusercontent.com/73955220/210324947-b333a83b-66df-4c61-8f55-f8148b6f8483.png">
+</p>
 
  **Step 3: Vectorizing the embedded dataset**                      
 
@@ -41,26 +41,29 @@ nltk.download('omw-1.4')
 
 nltk.download('wordnet')
 
-
-  
 **Output**
 Before tokenizing:
-
-![image](https://user-images.githubusercontent.com/73955220/210325887-843e3cad-92bf-4909-a504-8c6ae872d1ba.png)
+<p align="center">
+<img width="" height="" src="https://user-images.githubusercontent.com/73955220/210325887-843e3cad-92bf-4909-a504-8c6ae872d1ba.png">
+</p>
 
  After tokenizing:
 
-![image](https://user-images.githubusercontent.com/73955220/210325948-d0a25ea6-cdc9-44f0-8c73-be9937a73b98.png)
+ <p align="center">
+<img width="" height="" src="https://user-images.githubusercontent.com/73955220/210325948-d0a25ea6-cdc9-44f0-8c73-be9937a73b98.png">
+</p>
 
 Before Lemmatizer:
 
-![image](https://user-images.githubusercontent.com/73955220/210326015-50620f78-81bb-47af-9705-c7a159651d4d.png)
+<p align="center">
+<img width="" height="" src="https://user-images.githubusercontent.com/73955220/210326015-50620f78-81bb-47af-9705-c7a159651d4d.png">
+</p>
 
 After Lemmatizer:
 
-![image](https://user-images.githubusercontent.com/73955220/210326051-13912715-c88b-4bdc-bfc4-7fa1b399d485.png)
-
-
+<p align="center">
+<img width="" height="" src="https://user-images.githubusercontent.com/73955220/210326051-13912715-c88b-4bdc-bfc4-7fa1b399d485.png">
+</p>
 
 **Step 5: Vectorizing and Dividing Test and Training data**
 
@@ -75,9 +78,14 @@ After this we will pad our dataset to the max size of the token, so we don't get
 Function for counting the token size for our dataset
 Now we print and get an output graph for the token size
 
-![image](https://user-images.githubusercontent.com/73955220/210326719-520c7306-af5e-4a2e-8a56-50abbc28b5ba.png)
+<p align="center">
+<img width="" height="" src="https://user-images.githubusercontent.com/73955220/210326719-520c7306-af5e-4a2e-8a56-50abbc28b5ba.png">
+</p>
 
-![image](https://user-images.githubusercontent.com/73955220/210326736-c7062520-4a05-4283-a900-88e71aaa799a.png)
+
+<p align="center">
+<img width="" height="" src="https://user-images.githubusercontent.com/73955220/210326736-c7062520-4a05-4283-a900-88e71aaa799a.png">
+</p>
 
 **Step 7: Modeling RNN**
 We will create our model by designing Lstm, Dropout, Dense and flatten layer. We will get lstm layers to assign weights Dropout to remove overfitting Dense to get the most values Then flatten to get the output layer.
@@ -88,7 +96,9 @@ We will create our model by designing Lstm, Dropout, Dense and flatten layer. We
  Flatten over layer in the end
  And dense to get the values and sigmoid activation function because it's a binary class.
 
-![image](https://user-images.githubusercontent.com/73955220/210327272-0038c75f-2233-423f-89d8-5e87b5eb9a55.png)
+ <p align="center">
+<img width="" height="" src="https://user-images.githubusercontent.com/73955220/210327272-0038c75f-2233-423f-89d8-5e87b5eb9a55.png">
+</p>
 
 **Step 8: Compiling model**                                     
 First, we are defining the location where we want to save our trained weights.                                                
@@ -108,7 +118,9 @@ The give it a test data to get the accuracy of our model given below.
 
  **Output:**
 
-![image](https://user-images.githubusercontent.com/73955220/210327787-5da9b6d7-80da-4d40-9b7a-78e8a758d47a.png)
+<p align="center">
+<img width="" height="" src="https://user-images.githubusercontent.com/73955220/210327787-5da9b6d7-80da-4d40-9b7a-78e8a758d47a.png">
+</p>
 
 
 We have accuracy of positive sentiment: 88 %
@@ -119,14 +131,17 @@ We have accuracy of negative sentiment: 81 %
 
 **Output:**
 
-![image](https://user-images.githubusercontent.com/73955220/210328333-93c3a377-ee1d-4cb0-a8fc-ab0ded7a698f.png)
-
+<p align="center">
+<img width="" height="" src="https://user-images.githubusercontent.com/73955220/210328333-93c3a377-ee1d-4cb0-a8fc-ab0ded7a698f.png">
+</p>
 
 **Actual:** Positive Sentiment
 
 **Predicted:** Positive Sentiment
 
-![image](https://user-images.githubusercontent.com/73955220/210328497-ed7f2661-f7ae-4ad5-8590-5bf2f00078b7.png)
+<p align="center">
+<img width="" height="" src="https://user-images.githubusercontent.com/73955220/210328497-ed7f2661-f7ae-4ad5-8590-5bf2f00078b7.png">
+</p>
 
  **Actual:** Negative Sentiment
 
